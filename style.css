@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #f0f0f0;
+    /* background-color: black; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar
+{
+    /* border: 2px solid red; */
+    margin: 0rem  0rem 4rem ;
+}
+.navbar img
+{
+    width: 195px;
+}
+
+.section
+{
+
+    background: url(images/bg-desktop.svg);
+    background-color: #674bb1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 79%;
+    height: 90%;
+    padding: 3rem 4rem 0rem 4rem;
+    /* border: 2px solid white; */
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    /* align-items: center; */
+}
+.container img
+{
+    width: 54%;
+    margin-right: 2.5rem;
+}
+.container h1
+{
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* align-self: ; */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.container p
+{
+    opacity: .7;
+    line-height: 1.4;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+.container button 
+{
+    padding: .8rem 3rem;
+    border-radius: 30px;
+    border: none;
+    font-family: poppins;
+    font-size: 1rem;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 5px 5px 10px hsl(257, 47%, 25%);
+}
+
+.footerLinks
+{
+    margin-top: 2.5rem;
+    /* border: 2px solid white; */
+    text-align: end;
+}
+
+.footerLinks a
+{
+    border-radius: 50%;
+    padding: .4rem .6rem;
+    border: 1px solid white;
+}
+
+.footerLinks i
+{
+    color: white;
+    font-size: .9rem;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    body
+    {
+        flex-direction: column;
+    }
+    .navbar
+{
+    /* border: 2px solid red; */
+    margin: 0rem  0rem 2.25rem ;
+}
+    .navbar img 
+    {
+        width: 100px;
+    }
+    .section
+    {
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        padding: 1.25rem 1.5rem;
+    }
+    .container
+    {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .container img 
+    {
+        width: 255px;
+        margin: 0 0 2rem;
+        /* border: 2px solid white; */
+    }
+    .content h1 
+    {
+        margin: 0 0 1rem;
+        font-size: 1rem;
+
+    }
+    .content p
+    {
+        font-size: .7rem;
+    }
+
+    .content button 
+    {
+        margin-top: .25rem;
+        font-size: .7rem;
+        padding: .4rem 2.25rem;
+    }
+    .footerLinks
+    {
+        text-align: center;
+    }
+    .footerLinks a
+    {
+        margin: .25rem;
+        padding: 0;
+        border: none;
+        /* padding: .2rem .4rem; */
+        text-align: center;
+    }
+    .footerLinks i 
+    {
+        text-align: center;
+        font-size: .5rem;
+    }
+
+
+}
